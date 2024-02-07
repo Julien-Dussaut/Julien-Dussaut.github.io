@@ -1,0 +1,64 @@
+@import url(https://fonts.bunny.net/css?family=be-vietnam-pro:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
+/* 101720
+011222 */
+:root {
+    --secondary-color: #101720;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--secondary-color);
+}
+
+.boxVisu {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.boxVisu:hover {
+    cursor: pointer;
+    border-left: 10px solid blue;
+}
+
+.boxVisu h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--secondary-color);
+}
+
+.presentation {
+    background-color: aquamarine;
+}
+
+.projets {
+    background-color: chocolate;
+}
+
+.competences {
+    background-color: coral;
+}
+
+.firstPosition {
+    z-index: 3;
+    top: 25%;
+    left: 25%;
+}
+
+.secondPosition {
+    z-index: 2;
+    top: 20%;
+    left: 23%;
+}
+
+.thirdPosition {
+    z-index: 1;
+    top: 15%;
+    left: 21%;
+}
