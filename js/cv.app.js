@@ -1,27 +1,70 @@
 function secondPositionToFirstPosition (nodeSelected, nodeToPlaceInSecondPosition, nodeToPlaceInthirdPosition) {
-    nodeSelected.classList.add('firstPosition');
-    nodeSelected.classList.remove('secondPosition', 'thirdPosition');
+    nodeSelected.style.animationName = 'secondToFirst';
+    nodeSelected.style.animationPlayState = "running";
+    nodeSelected.style.zIndex = '3';
+    nodeToPlaceInSecondPosition.style.zIndex = '2';
+    nodeToPlaceInthirdPosition.style.zIndex = '1';
+    setTimeout(function() {
+        nodeSelected.classList.add('firstPosition');
+        nodeSelected.classList.remove('secondPosition', 'thirdPosition');
+        nodeSelected.style.animationPlayState = "paused";
+    }, 2000);
+    
+    nodeToPlaceInSecondPosition.style.animationName = 'thirdToSecond';
+    nodeToPlaceInthirdPosition.style.animationName = 'firstToThird';
     placeNodeInSecondPosition(nodeToPlaceInSecondPosition);
     placeNodeInThirdPosition(nodeToPlaceInthirdPosition);
 }
 
 function thirdPositionToFirstPosition (nodeSelected, nodeToPlaceInSecondPosition, nodeToPlaceInthirdPosition) {
-    nodeSelected.classList.add('firstPosition');
-    nodeSelected.classList.remove('secondPosition', 'thirdPosition');
+    nodeSelected.style.animationName = 'thirdToFirst';
+    nodeSelected.style.animationPlayState = "running";
+    nodeSelected.style.zIndex = '3';
+    nodeToPlaceInSecondPosition.style.zIndex = '2';
+    nodeToPlaceInthirdPosition.style.zIndex = '1';
+    setTimeout(function() {
+        nodeSelected.classList.add('firstPosition');
+        nodeSelected.classList.remove('secondPosition', 'thirdPosition');
+        nodeSelected.style.animationPlayState = "paused";
+    }, 2000);
+    
+    nodeToPlaceInSecondPosition.style.animationName = 'firstToSecond';
+    nodeToPlaceInthirdPosition.style.animationName = 'secondToThird';
     placeNodeInSecondPosition(nodeToPlaceInSecondPosition);
     placeNodeInThirdPosition(nodeToPlaceInthirdPosition);
 }
 
 function placeNodeInSecondPosition (nodeSelected) {
-    nodeSelected.classList.add('secondPosition');
-    nodeSelected.classList.remove('firstPosition', 'thirdPosition');
+    nodeSelected.style.animationPlayState = "running";
+    setTimeout(function() {
+        nodeSelected.classList.add('secondPosition');
+        nodeSelected.classList.remove('firstPosition', 'thirdPosition');
+        nodeSelected.style.animationPlayState = "paused";
+    }, 2000);
+    
 }
 
 function placeNodeInThirdPosition (nodeSelected) {
-    nodeSelected.classList.add('thirdPosition');
-    nodeSelected.classList.remove('firstPosition', 'secondPosition');
+    nodeSelected.style.animationPlayState = "running";
+    setTimeout(function() {
+        nodeSelected.classList.add('thirdPosition');
+        nodeSelected.classList.remove('firstPosition', 'secondPosition');
+        nodeSelected.style.animationPlayState = "paused";
+    }, 2000);
+    
 }
 
+let box = document.querySelector('#boxtext');
+
+box.addEventListener('click', function() {
+    box.style.animationPlayState = 'running'; 
+    setTimeout(function() {
+        box.style.top = '100px';
+        box.style.left = '100px';
+    }, 2000);
+    
+    
+})
 
 let corps = document.querySelector('body');
 
@@ -65,16 +108,4 @@ corps.addEventListener('click', function(e) {
         break;
     }
 
-})
-
-let box = document.querySelector('#boxtext');
-
-box.addEventListener('click', function() {
-    box.style.animationPlayState = 'running'; 
-    setTimeout(function() {
-        box.style.top = '100px';
-        box.style.left = '100px';
-    }, 2000);
-    
-    
 })
