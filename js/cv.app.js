@@ -54,18 +54,6 @@ function placeNodeInThirdPosition (nodeSelected) {
     
 }
 
-let box = document.querySelector('#boxtext');
-
-box.addEventListener('click', function() {
-    box.style.animationPlayState = 'running'; 
-    setTimeout(function() {
-        box.style.top = '100px';
-        box.style.left = '100px';
-    }, 2000);
-    
-    
-})
-
 let corps = document.querySelector('body');
 
 corps.addEventListener('click', function(e) {
