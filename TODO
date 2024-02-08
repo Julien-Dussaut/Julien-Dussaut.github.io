@@ -1,0 +1,16 @@
+
+Todo:
+  ☐ Créer des keyframes pour déplacer les box en utilisant les différences de % de placement pour les étapes, ajouter un dégradé d'opacité également (5% de différence = 5 étapes pour la keyframes)
+  ☐ Ajouter bouton sous les boites pour ajouter un second mode de navigation (le gérer avec la fonction js déjà créée)
+  ☐ Modifier la chartre graphique pour éviter la multiplication des couleurs (La faire en nuances de bleu avec une touche de blanc modifiée et un orange mat)
+
+  ☐ Pour accéder aux sections détaillés des box
+    ☐ Faire "partir" les box sur la droite, le bas ou la gauche (en fonction de la box cliqué et hors du champ) et après le départ de la dernière, afficher les détails de la box cliquée en les amenant par l'opposé du départ (la box détaillée chasse les box initiales)
+    ☐ Faire la même chose en sens inverse pour le retour à l'accueil
+
+  ☐ Utiliser la fonction JS animation-play-state pour le déplacement des box au clic
+
+
+    https://omatsuri.app/color-shades-generator
+
+    https://graphiste.com/blog/animations-css-bordures/
