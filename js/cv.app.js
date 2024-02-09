@@ -67,45 +67,41 @@ function placeNodeInThirdPosition (nodeSelected) {
     
 }
 
-let corps = document.querySelector('body');
+let boxVisuList = document.querySelectorAll('.boxVisu');;
 
-corps.addEventListener('click', function(e) {
+boxVisuList.forEach(currentNode => {
+    currentNode.addEventListener('click', function() {
+        if(currentNode.classList.contains('secondPosition')) {
+            switch (currentNode.classList[1]) {
+                case 'presentation':
+                    secondPositionToFirstPosition(currentNode, boxVisuList[1], boxVisuList[2]);
+                break;
 
-    let classesRecuperees = e.target.className.split(' ');
+                case 'projets':
+                    secondPositionToFirstPosition(currentNode, boxVisuList[2], boxVisuList[0]);
+                break;
 
-    if (!classesRecuperees.includes('boxVisu')) {
-        classesRecuperees = e.target.parentNode.className.split(' ');
-    }
+                case 'competences':
+                    secondPositionToFirstPosition(currentNode, boxVisuList[0], boxVisuList[1]);
+                break;
+            }
+        } else if(currentNode.classList.contains('thirdPosition')) {
+            switch (currentNode.classList[1]) {
+                case 'presentation':
+                    thirdPositionToFirstPosition(currentNode, boxVisuList[1], boxVisuList[2]);
+                break;
 
-    let classeConcernee = classesRecuperees.includes('presentation') ? '.presentation' : classesRecuperees.includes('projets') ? '.projets' : classesRecuperees.includes('competences') ? '.competences': false;
+                case 'projets':
+                    thirdPositionToFirstPosition(currentNode, boxVisuList[2], boxVisuList[0]);
+                break;
 
-    let divPresentation = document.querySelector('.presentation'), divProjets = document.querySelector('.projets'), divCompetences = document.querySelector('.competences');
+                case 'competences':
+                    thirdPositionToFirstPosition(currentNode, boxVisuList[0], boxVisuList[1]);
+                break;
+            }
+        }
 
+        boxVisuList = document.querySelectorAll('.boxVisu');
+    })
     
-    switch (classeConcernee) {
-
-        case '.presentation':
-            if (divPresentation.classList.contains('secondPosition')) {
-                secondPositionToFirstPosition(divPresentation, divProjets, divCompetences);
-            } else if (divPresentation.classList.contains('thirdPosition')) {
-                thirdPositionToFirstPosition(divPresentation, divProjets, divCompetences);
-            }
-        break;
-        case '.projets':
-            if (divProjets.classList.contains('secondPosition')) {
-                secondPositionToFirstPosition(divProjets, divCompetences, divPresentation);
-            } else if (divProjets.classList.contains('thirdPosition')) {
-                thirdPositionToFirstPosition(divProjets, divCompetences, divPresentation);
-            }
-        break; 
-
-        case '.competences':
-            if ( divCompetences.classList.contains('secondPosition')) {
-                secondPositionToFirstPosition(divCompetences, divPresentation, divProjets);
-            } else if (divCompetences.classList.contains('thirdPosition')) {
-                thirdPositionToFirstPosition(divCompetences, divPresentation, divProjets);
-            }
-        break;
-    }
-
 })
