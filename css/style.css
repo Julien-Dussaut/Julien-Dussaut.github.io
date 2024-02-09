@@ -40,6 +40,9 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-text-color), var(--border-color));
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
 }
 
 header h1 {
@@ -49,10 +52,7 @@ header h1 {
     color: transparent;
     font-weight: 900;
     -webkit-text-stroke: 1px var(--secondary-color);
-    /* background-image: url('../images/StockSnap_TIV258VG3N.jpg');
-    background-size: contain;
-    background-repeat: repeat; */
-    /* background-clip: text; */
+    
 }
 header h1 span {
     display: block;
@@ -144,6 +144,18 @@ h2 {
     }
     to {
         color: var(--primary-text-color);
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
