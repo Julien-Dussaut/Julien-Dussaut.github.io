@@ -11,7 +11,9 @@ f8f8ff*/
 } */
 * {
     animation-play-state: paused;
+
 }
+/* **************************************** Design general **************************************** */
 
 :root {
     --secondary-color: #F8F8FF;
@@ -23,10 +25,42 @@ body {
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
+    font-size: 16px;
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: var(--primary-text-color);
     box-shadow: inset 0 0 15px var(--border-color);
 }
+
+/* **************************************** Fin design general **************************************** */
+
+/* **************************************** Design header **************************************** */
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    color: transparent;
+    font-weight: 900;
+    -webkit-text-stroke: 1px var(--secondary-color);
+    /* background-image: url('../images/StockSnap_TIV258VG3N.jpg');
+    background-size: contain;
+    background-repeat: repeat; */
+    /* background-clip: text; */
+}
+header h1 span {
+    display: block;
+    font-size: 1.5rem;
+}
+/* **************************************** Fin design header **************************************** */
+
+/* **************************************** Design info box **************************************** */
 
 .boxVisu {
     height: 50%;
@@ -51,16 +85,29 @@ h2 {
     color: var(--secondary-color);
 }
 
-.presentation {
+.boxVisu p {
+    margin: 2.1rem;
+    color: var(--secondary-color);
+}
 
+.boxVisu a {
+    text-decoration: underline;
+}
+
+.boxVisu a:hover {
+    animation: animLink 1000ms infinite;
+}
+
+.presentation {
+    /* padding: 1rem; */
 }
 
 .projets {
-
+    /* padding: 1rem; */
 }
 
 .competences {
-
+    /* padding: 1rem; */
 }
 
 .firstPosition {
@@ -83,6 +130,26 @@ h2 {
     left: 21%;
     animation-duration: 2s;
 }
+
+/* **************************************** Fin design info box **************************************** */
+
+/* **************************************** Animations **************************************** */
+
+/* **************************************** Animations for link and header **************************************** */
+
+
+@keyframes animLink {
+    from {
+        color: var(--secondary-color);
+    }
+    to {
+        color: var(--primary-text-color);
+    }
+}
+
+/* **************************************** Fin animations for link and header **************************************** */
+
+/* **************************************** Animations change places boxes **************************************** */
 
 @keyframes firstToSecond {
     0% {
@@ -132,7 +199,7 @@ h2 {
     100% {
         top: 25%;
         left: 25%;
-        border: 10px solid var(--secondary-color);
+        border: 1px solid var(--border-color);
     }
 }
 
@@ -188,14 +255,49 @@ h2 {
     }
 }
 
+/* **************************************** Fin animations change places boxes **************************************** */
+
+/* **************************************** Animation for more infos **************************************** */
+
 @keyframes boxToLeft {
     0% {
         left: 25%;
     }
     75% {
-        left: 200%
+        opacity: 0.5;
     }
     100% {
+        left: 100%;
         display: none;
     }
 }
+
+@keyframes boxToTop {
+    0% {
+        top: 15%;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        top: 100%;
+        display: none;
+    }
+}
+
+@keyframes boxToRight {
+    0% {
+        left: 23%;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        left: -100%;
+        display: none;
+    }
+}
+
+/* **************************************** Fin animation for more infos **************************************** */
+
+/* **************************************** Fin animations **************************************** */

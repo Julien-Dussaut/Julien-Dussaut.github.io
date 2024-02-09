@@ -14,6 +14,13 @@ function secondPositionToFirstPosition (nodeSelected, nodeToPlaceInSecondPositio
     nodeToPlaceInthirdPosition.style.animationName = 'firstToThird';
     placeNodeInSecondPosition(nodeToPlaceInSecondPosition);
     placeNodeInThirdPosition(nodeToPlaceInthirdPosition);
+    
+    setTimeout(function() {
+        nodeSelected.style.animationName = '';
+    nodeToPlaceInSecondPosition.style.animationName = '';
+    nodeToPlaceInthirdPosition.style.animationName = '';
+    }, 2100);
+    
 }
 
 function thirdPositionToFirstPosition (nodeSelected, nodeToPlaceInSecondPosition, nodeToPlaceInthirdPosition) {
@@ -32,6 +39,12 @@ function thirdPositionToFirstPosition (nodeSelected, nodeToPlaceInSecondPosition
     nodeToPlaceInthirdPosition.style.animationName = 'secondToThird';
     placeNodeInSecondPosition(nodeToPlaceInSecondPosition);
     placeNodeInThirdPosition(nodeToPlaceInthirdPosition);
+
+    setTimeout(function() {
+        nodeSelected.style.animationName = '';
+    nodeToPlaceInSecondPosition.style.animationName = '';
+    nodeToPlaceInthirdPosition.style.animationName = '';
+    }, 2100);
 }
 
 function placeNodeInSecondPosition (nodeSelected) {
@@ -76,11 +89,7 @@ corps.addEventListener('click', function(e) {
                 secondPositionToFirstPosition(divPresentation, divProjets, divCompetences);
             } else if (!divPresentation.classList.contains('firstPosition') && divPresentation.classList.contains('thirdPosition')) {
                 thirdPositionToFirstPosition(divPresentation, divProjets, divCompetences);
-            } /*else {
-                divPresentation.style.animationName = 'boxToLeft';
-                divPresentation.style.animationPlayState = 'running';
-            }*/
-        break;
+            }
 
         case '.projets':
             if (!divProjets.classList.contains('firstPosition') && divProjets.classList.contains('secondPosition')) {
