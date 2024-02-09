@@ -76,7 +76,10 @@ corps.addEventListener('click', function(e) {
                 secondPositionToFirstPosition(divPresentation, divProjets, divCompetences);
             } else if (!divPresentation.classList.contains('firstPosition') && divPresentation.classList.contains('thirdPosition')) {
                 thirdPositionToFirstPosition(divPresentation, divProjets, divCompetences);
-            }
+            } /*else {
+                divPresentation.style.animationName = 'boxToLeft';
+                divPresentation.style.animationPlayState = 'running';
+            }*/
         break;
 
         case '.projets':
