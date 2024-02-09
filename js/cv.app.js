@@ -17,8 +17,8 @@ function secondPositionToFirstPosition (nodeSelected, nodeToPlaceInSecondPositio
     
     setTimeout(function() {
         nodeSelected.style.animationName = '';
-    nodeToPlaceInSecondPosition.style.animationName = '';
-    nodeToPlaceInthirdPosition.style.animationName = '';
+        nodeToPlaceInSecondPosition.style.animationName = '';
+        nodeToPlaceInthirdPosition.style.animationName = '';
     }, 2100);
     
 }
@@ -85,24 +85,24 @@ corps.addEventListener('click', function(e) {
     switch (classeConcernee) {
 
         case '.presentation':
-            if (!divPresentation.classList.contains('firstPosition') && divPresentation.classList.contains('secondPosition')) {
+            if (divPresentation.classList.contains('secondPosition')) {
                 secondPositionToFirstPosition(divPresentation, divProjets, divCompetences);
-            } else if (!divPresentation.classList.contains('firstPosition') && divPresentation.classList.contains('thirdPosition')) {
+            } else if (divPresentation.classList.contains('thirdPosition')) {
                 thirdPositionToFirstPosition(divPresentation, divProjets, divCompetences);
             }
-
+        break;
         case '.projets':
-            if (!divProjets.classList.contains('firstPosition') && divProjets.classList.contains('secondPosition')) {
+            if (divProjets.classList.contains('secondPosition')) {
                 secondPositionToFirstPosition(divProjets, divCompetences, divPresentation);
-            } else if (!divProjets.classList.contains('firstPosition') && divProjets.classList.contains('thirdPosition')) {
+            } else if (divProjets.classList.contains('thirdPosition')) {
                 thirdPositionToFirstPosition(divProjets, divCompetences, divPresentation);
             }
-        break;
+        break; 
 
         case '.competences':
-            if (!divCompetences.classList.contains('firstPosition') && divCompetences.classList.contains('secondPosition')) {
+            if ( divCompetences.classList.contains('secondPosition')) {
                 secondPositionToFirstPosition(divCompetences, divPresentation, divProjets);
-            } else if (!divCompetences.classList.contains('firstPosition') && divCompetences.classList.contains('thirdPosition')) {
+            } else if (divCompetences.classList.contains('thirdPosition')) {
                 thirdPositionToFirstPosition(divCompetences, divPresentation, divProjets);
             }
         break;
