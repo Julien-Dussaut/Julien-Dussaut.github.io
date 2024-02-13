@@ -21,7 +21,10 @@
   --primary-text-color: #F8F8FF;
   --primary-color: #011222;
 }
-@media (max-width: 600px) {
+
+/* **************************************** Règles CSS pour téléphone en portrait **************************************** */
+
+@media (max-width: 600px) and (orientation: portrait) {
   body {
     width: 100%;
     min-height: 100vh;
@@ -66,17 +69,49 @@
     margin: auto;
   }
 
-/* **************************************** Fin header **************************************** */
-  
   #me {
     width: 50%;
     filter: grayscale();
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    border: 1px solid var(--primary-text-color);
+    margin: 1rem;
   }
 }
 
+/* **************************************** Fin header **************************************** */
+
+/* **************************************** Présentation **************************************** */
+
+.presentation {
+  width: 90%;
+  margin: auto;
+  padding: 0.5rem 0.5rem;
+  border-right: 1px solid var(--primary-text-color);
+  border-left: 1px solid var(--primary-text-color);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: inset 15px 0 0 var(--primary-text-color);
+}
+
+.presentation p {
+  font-size: 1.5rem;
+}
+
+.cta {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+  padding: 0.5rem;
+  box-shadow: inset 0 0 15px var(--primary-color);
+}
+
+
+/* **************************************** Fin règles CSS pour téléphone en portrait **************************************** */
 /* body {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
