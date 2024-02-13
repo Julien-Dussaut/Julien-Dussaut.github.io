@@ -63,6 +63,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  li a {
+    text-align: center;
+  }
   img {
     width: 30%;
     display: inline-block;
@@ -81,6 +85,13 @@
 }
 
 /* **************************************** Fin header **************************************** */
+
+/* main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: center;
+} */
 
 /* **************************************** Présentation **************************************** */
 
@@ -110,6 +121,32 @@
   box-shadow: inset 0 0 15px var(--primary-color);
 }
 
+/* **************************************** Fin présentation **************************************** */
+
+/* **************************************** Skills **************************************** */
+
+#skills {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-right: 1px solid var(--primary-text-color);
+  border-left: 1px solid var(--primary-text-color);
+  border-radius: 15px;
+}
+
+#skills img {
+  width: 10%;
+}
+
+#skills p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.barreSkills {
+
+}
+/* **************************************** Fin skills **************************************** */
 
 /* **************************************** Fin règles CSS pour téléphone en portrait **************************************** */
 /* body {
