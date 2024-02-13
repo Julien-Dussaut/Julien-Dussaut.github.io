@@ -1,0 +1,91 @@
+/*
+#0C0C0C
+#0B1215
+#0D1717
+#101720
+#171717
+#011222
+#020D19
+
+#FAFAFA
+#FBFBFB
+#F0F8FF
+#FFFFF0
+#C7C7C7
+#FFFAFA
+#F8F8FF
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root {
+  --primary-text-color: #F8F8FF;
+  --primary-color: #011222;
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+  }
+
+  header {
+    width: 100%;
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      nav {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        ul {
+          display: flex;
+          justify-content: space-around;
+          li {
+            display: inline-block;
+            width: 20%;
+            text-align: center;
+          }
+        }
+        
+      }
+  }
+  
+  #me {
+    width: 50%;
+    filter: grayscale(50%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
+
+/* body {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-color: #011222;
+    color: #F8F8FF;
+    width: 100%;
+    min-height: 100vh;
+}
+header {
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+img#me {
+    position: absolute;
+    top: 0;
+    right: 0;
+    filter: grayscale();
+    z-index: -1;
+}
+
+.presentation p {
+    
+} */
+
+

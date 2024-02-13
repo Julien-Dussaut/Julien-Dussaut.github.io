@@ -37,6 +37,49 @@ boxVisuList.forEach(currentNode => {
         }
 
         boxVisuList = document.querySelectorAll('.boxVisu');
+        testLinkMoreInfo = document.querySelector('.firstPosition a');
     })
     
 })
+
+let testLinkMoreInfo = document.querySelector('.firstPosition a');
+let linksBox = document.querySelectorAll('.boxVisu a');
+
+
+
+testLinkMoreInfo.addEventListener("click", function() {
+    manager.displayMoreInfos();
+    testLinkMoreInfo = document.querySelector('.firstPosition a');
+})
+/*linksBox.forEach(currentLink => {
+    currentLink.addEventListener('click', function() {
+        console.log('click');
+        if(currentLink.closest('.boxVisu').classList.contains('firstPosition')) {
+            let firstBox = document.querySelector('.firstPosition');
+            let secondBox = document.querySelector('.secondPosition');
+            let thirdBox = document.querySelector('.thirdPosition');
+            console.log(firstBox);
+
+            thirdBox.style.animationName = 'boxToRight';
+            thirdBox.style.animationPlayState = "running";
+
+            secondBox.style.animationName = 'boxToTop';
+            secondBox.style.animationPlayState = "running";
+
+            firstBox.style.animationName = 'boxToLeft';
+            firstBox.style.animationPlayState = 'running';
+
+            setTimeout(function() {
+                thirdBox.style.animationName = '';
+                thirdBox.style.animationPlayState = "paused";
+
+                secondBox.style.animationName = '';
+                secondBox.style.animationPlayState = "paused";
+
+                firstBox.style.animationName = '';
+                firstBox.style.animationPlayState = 'paused';
+            }, 2000);
+        }
+    })
+    // console.log(currentLink.closest('.boxVisu').classList);
+})*/

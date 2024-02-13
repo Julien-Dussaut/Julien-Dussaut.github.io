@@ -68,6 +68,57 @@ export default class domManager {
         }, 2000);
         
     }
+
+    sendBoxToRigth (nodeSelected) {
+        nodeSelected.style.animationName = 'boxToRigth';
+        nodeSelected.style.animationPlayState = 'running';
+        setTimeout(function() {
+            nodeSelected.style.display = 'none';
+            nodeSelected.style.animationPlayState = 'paused';
+            nodeSelected.style.animationName = '';
+        }, 2000);
+    }
+
+    sendBoxToTop (nodeSelected) {
+        nodeSelected.style.animationName = 'boxToTop';
+        nodeSelected.style.animationPlayState = 'running';
+        setTimeout(function() {
+            nodeSelected.style.display = 'none';
+            nodeSelected.style.animationPlayState = 'paused';
+            nodeSelected.style.animationName = '';
+        }, 2000);
+    }
+
+    sendBoxToLeft (nodeSelected) {
+        nodeSelected.style.animationName = 'boxToLeft';
+        nodeSelected.style.animationPlayState = 'running';
+        setTimeout(function() {
+            nodeSelected.style.display = 'none';
+            nodeSelected.style.animationPlayState = 'paused';
+            nodeSelected.style.animationName = '';
+        }, 2000);
+    }
+
+    displayMoreInfos () {
+        document.querySelector('.thirdPosition').style.opacity = '0';
+        document.querySelector('.secondPosition').style.opacity = '0';
+        document.querySelector('.firstPosition').style.animationName = 'moreInfos';
+        document.querySelector('.firstPosition').style.animationPlayState = 'running';
+
+        let boxVisuLink = document.querySelector('.boxVisu__link');
+        boxVisuLink.textContent = 'Retour à l\'accueil';
+
+        boxVisuLink.addEventListener('click', function() {
+            
+        })
+        setTimeout(function() {
+            document.querySelector('.firstPosition').style.animationPLayState = 'paused';
+            document.querySelector('.firstPosition').style.top = '0';
+            document.querySelector('.firstPosition').style.left = '0';
+            document.querySelector('.firstPosition').style.width = '100%';
+            document.querySelector('.firstPosition').style.height = '100%';
+        }, 2000);
+    }
 }
 
 
