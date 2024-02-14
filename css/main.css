@@ -19,6 +19,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 :root {
   --primary-text-color: #F8F8FF;
+  --primary-text-color-transparent: rgb(248, 248, 255, 0.5);
   --primary-color: #011222;
 }
 
@@ -32,6 +33,24 @@
     color: var(--primary-text-color);
   }
 
+/* **************************************** Factorisation règles mobiles **************************************** */
+
+  #presentation, #projets, #skills {
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: inset 0 -5px 0 var(--primary-text-color-transparent), inset 0 5px 0 var(--primary-text-color-transparent);
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  #skills h2, #projets h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+/* **************************************** Fin factorisation règles mobiles **************************************** */
+
 /* **************************************** Header **************************************** */
 
   header {
@@ -39,14 +58,12 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
+
   h1 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
     color: var(--primary-text-color);
-    /* font-weight: 900; */
-    /* -webkit-text-stroke: 0.5px var(--primary-text-color); */
-    /* letter-spacing: 0.5rem; */
   }
   nav {
     padding-bottom: 0.5rem;
@@ -95,83 +112,72 @@
 
 /* **************************************** Présentation **************************************** */
 
-.presentation {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 2rem;
-  padding: 0.5rem 0.5rem;
-  border-right: 1px solid var(--primary-text-color);
-  border-left: 1px solid var(--primary-text-color);
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: inset 10px 0 0 var(--primary-text-color);
-}
+  #presentation {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 
-.presentation p {
-  font-size: 1.5rem;
-}
+  #presentation p {
+    font-size: 1.5rem;
+  }
 
-.cta {
-  margin-top: 0.5rem;
-  font-size: 2rem;
-  border: none;
-  border-radius: 15px;
-  background-color: var(--primary-text-color);
-  color: var(--primary-color);
-  padding: 0.5rem;
-  box-shadow: inset 0 0 15px var(--primary-color);
-}
+  .cta {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--primary-text-color);
+    color: var(--primary-color);
+    padding: 0.5rem;
+    box-shadow: inset 0 0 15px var(--primary-color);
+  }
 
 /* **************************************** Fin présentation **************************************** */
 
 /* **************************************** Skills **************************************** */
 
-#skills {
-  width: 90%;
+  #skills p {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+
+  #skills p:nth-child(2){
+    background: linear-gradient(to right, #E96228, rgba(0, 0, 0, 0) 90%);
+    border: 1px solid #E96228;
+  }
+
+  #skills p:nth-child(3){
+    background: linear-gradient(to right, #3595CF, rgba(0, 0, 0, 0) 75%);
+    border: 1px solid #3595CF;
+  }
+
+  #skills p:nth-child(4){
+    background: linear-gradient(to right, #869AD9, rgba(0, 0, 0, 0) 65%);
+    border: 1px solid #869AD9;
+  }
+
+  #skills p:nth-child(5){
+    border: 1px solid #F7D724;
+    background: linear-gradient(to right, #F7D724, rgba(0, 0, 0, 0) 60%);
+    
+  }
+
+/* **************************************** Fin skills **************************************** */
+
+/* **************************************** Projets **************************************** */
+
+#projets article {
+  width: 100%;
+  height: 25vh;
+  border: 1px solid var(--primary-text-color);
   margin: auto;
   margin-top: 1rem;
-  padding: 0.5rem 0.5rem;
-  border-right: 1px solid var(--primary-text-color);
-  border-left: 1px solid var(--primary-text-color);
-  border-radius: 15px;
 }
-
-#skills h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#skills p {
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  padding: 0.5rem;
-  border-radius: 15px;
-}
-
-#skills p:nth-child(2){
-  background: linear-gradient(to right, #E96228, rgba(0, 0, 0, 0) 90%);
-  border: 1px solid #E96228;
-}
-
-#skills p:nth-child(3){
-  background: linear-gradient(to right, #3595CF, rgba(0, 0, 0, 0) 75%);
-  border: 1px solid #3595CF;
-}
-
-#skills p:nth-child(4){
-  background: linear-gradient(to right, #869AD9, rgba(0, 0, 0, 0) 65%);
-  border: 1px solid #869AD9;
-}
-
-#skills p:nth-child(5){
-  border: 1px solid #F7D724;
-  background: linear-gradient(to right, #F7D724, rgba(0, 0, 0, 0) 60%);
-  
-}
-/* **************************************** Fin skills **************************************** */
+/* **************************************** Fin projets **************************************** */
 
 /* **************************************** Fin règles CSS pour téléphone en portrait **************************************** */
 /* body {
