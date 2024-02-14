@@ -23,6 +23,9 @@
   --primary-color: #011222;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* **************************************** Règles CSS pour téléphone en portrait **************************************** */
 
 @media (max-width: 600px) and (orientation: portrait) {
@@ -41,7 +44,7 @@
     border-radius: 15px;
     box-shadow: inset 0 -5px 0 var(--primary-text-color-transparent), inset 0 5px 0 var(--primary-text-color-transparent);
     margin-top: 1rem;
-    padding: 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
   
   #skills h2, #projets h2 {
