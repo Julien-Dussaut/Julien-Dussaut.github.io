@@ -28,7 +28,7 @@ html {
 }
 /* **************************************** Règles CSS pour téléphone en portrait **************************************** */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   html {
     scroll-behavior: smooth;
   }
@@ -108,6 +108,13 @@ html {
     margin: auto;
   }
 
+  #fleche-haut {
+    width: 4%;
+    position: fixed;
+    right: 1%;
+    top: 50%;
+    display: none;
+  }
   #me {
     width: 60%;
     filter: grayscale();
@@ -195,6 +202,24 @@ html {
 /* **************************************** Fin projets **************************************** */
 
 /* **************************************** Fin règles CSS pour téléphone en portrait **************************************** */
+
+/* **************************************** Règles CSS pour tablette **************************************** */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* **************************************** Fin règles CSS pour tablette **************************************** */
+
+/* **************************************** Règles CSS pour tablette **************************************** */
+
+@media screen and (min-width: 1024px) {
+
+}
+
+/* **************************************** Fin règles CSS pour tablette **************************************** */
+
+
 /* body {
     font-family: "Oswald", sans-serif;
     font-size: 16px;

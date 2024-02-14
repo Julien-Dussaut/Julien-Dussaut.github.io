@@ -1,12 +1,18 @@
-/* window.addEventListener('scroll', function(scroll) {
+window.addEventListener('scroll', function(scroll) {
 
     if(window.scrollY / this.document.body.clientHeight > 0) {
-        document.querySelector('header').style.backgroundColor = '#011222';
+        let fleche = document.querySelector('#fleche-haut');
+        fleche.style.display = "block";
+        fleche.style.top = this.window.scrollY - '50%';
+        fleche.addEventListener('click', function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        })
     } else {
-        document.querySelector('header').style.backgroundColor = '';
+        document.querySelector('#fleche-haut').style.display = 'none';
     }
     
-}) */
+})
 
 let anchorLink = document.querySelectorAll('.internLink');
 
