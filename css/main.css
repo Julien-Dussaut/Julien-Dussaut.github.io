@@ -28,7 +28,7 @@ html {
 }
 /* **************************************** Règles CSS pour téléphone en portrait **************************************** */
 
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 720px) and (orientation: portrait) {
   body {
     width: 100%;
     min-height: 100vh;
