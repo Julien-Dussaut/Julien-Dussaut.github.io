@@ -1,100 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/reboot.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="./js/main.script.js" defer></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
   <title>Julien Dussaut - Développeur web</title>
 </head>
-<body>
-  <header>
-    <h1>Julien Dussaut</h1>
-
+<body class="container-fluid p-0 text-center">
+  <header class="sticky-top">
+    <h1>Julien Dussaut - Développeur <span id="subtitle"></span><span id="cursor">|</span></h1>
     <nav>
-      <ul>
-      	<li><img src="./images/icons-github.png" alt="Logo Github"></li>
-      	<li><img src="./images/icons-linkedin.png" alt="Logo Linkedin"></li>
-      	<li><img src="./images/icons-twitterx.png" alt="Logo Twitter / X"></li>
-      	<li><a class="internLink" href="#skillsAnchor"><img src="./images/skills.png" alt="Icône skills"></a></li>
-      	<li><a class="internLink" href="#projetsAnchor"><img src="./images/projets.png" alt="Icône projets"></a></li>
+      <ul id="menu" class="nav nav-tabs">
+        <li class="nav-item col-4">
+          <a class="nav-link" href="#presentation">Présentation</a>
+        </li>
+        <li class="nav-item col-4">
+        <a class="nav-link" href="#skills">Technologies</a>
+        </li>
+        <li class="nav-item col-4">
+          <a class="nav-link" href="#projets">Projets</a>
+        </li>
       </ul>
     </nav>
-    
   </header>
 
-  <main>
+  <main data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true">
+    <section class="vh-100">
 
-    <img id="me" src="./images/me.jpg" alt="Photo de Julien Dussaut">
-
-    <section id="presentation">
-
-      <p>
-        Développeur web passionné, je tisse des toiles numériques grâce aux langages PHP et Javascript. Mon objectif : rendre le web plus beau et plus accessible !
-      </p>
-      
-			<button id="skillsAnchor" class="cta"><a href="mailto:julien.dussaut@oclock.school"></a>Contactez-moi</button>
-
-    </section>
-    
-    <section id="skills">
-
-      <h2>Mes skills</h2>
-
-          <p>
-						HTML
-					</p>
-
-          <p>
-						CSS
-					</p>
-
-          <p>
-						PHP
-					</p>
-
-					<p id="projetsAnchor">
-						Javascript
-					</p>
+      <h2 id="presentation">Apprenez à me connaître</h2>
+        <p>
+          Bonjour, je suis Julien Dussaut, développeur web passionné.<br>
+          Je suis spécialisé dans la création de sites web et d'applications web performantes et intuitives.<br>
+          Je maîtrise parfaitement les langages HTML, CSS, JavaScript, PHP et MySQL.<br>
+          Je suis capable de répondre à tous vos besoins, que ce soit pour la création d'un site web vitrine, d'un site e-commerce, d'une application web métier ou encore d'un blog.<br>
+          Je suis rigoureux, méthodique et à l'écoute de vos besoins.<br>
+          Je mets tout en œuvre pour vous fournir un travail de qualité qui répond à vos attentes.<br>
+          Vous trouverez <a href="#projets">ici</a> quelques exemples de mes réalisations.<br><br>
+          N'hésitez pas à me contacter pour discuter de votre projet, je serai ravi de vous accompagner et de vous proposer une solution web adaptée à vos besoins.
+        </p>
+        <button class="cta"><a href="mailto:julien.dussaut@oclock.school"></a>Contactez-moi</button>
 
     </section>
+  
+    <section class="vh-100">
 
-  	<section id="projets">
-
-      <h2>Mes réalisations</h2>
-
-        <article>
-
-					<h3>Projet 1</h3>
-
-				</article>
-
-				<article>
-
-					<h3>Projet 2</h3>
-
-				</article>
-
-				<article>
-
-					<h3>Projet 3</h3>
-
-				</article>
-
-				<article>
-
-					<h3>Projet 4</h3>
-
-				</article>
+      <h2 id="skills">Mes skills</h2>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>PHP</p>
+      <p>Javascript</p>
 
     </section>
+  
+    <section class="vh-100">
 
+      <h2 id="projets">Mes réalisations</h2>
+        <div class="slider">
+          <article class="projet-1 activeProjet">
+            <h3>Projet 1</h3>
+          </article>
+          <article class="projet-2">
+            <h3>Projet 2</h3>
+          </article>
+          <article class="projet-3">
+            <h3>Projet 3</h3>
+          </article>
+          <article class="projet-4">
+            <h3>Projet 4</h3>
+          </article>
+          <article class="projet-5">
+            <h3>Projet 5</h3>
+          </article>
+        </div>
+
+    </section>
   </main>
 
-  <footer>
 
-  </footer>
-  <img id="fleche-haut" src="./images/fleche-haut.png" alt="Flèche haut">
+  <!-- <script src="./js/script.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

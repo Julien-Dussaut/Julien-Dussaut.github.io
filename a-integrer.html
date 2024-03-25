@@ -1,0 +1,102 @@
+<header class="col-12 text-center p-2 pb-0 position-sticky top-0 shadow bg-dark-subtle vh-80">
+  <h1>Julien Dussaut - Développeur <span id="subtitle"></span><span id="cursor">|</span></h1>
+  <nav class="navbar mb-0 pb-0">
+    <ul class="nav col-lg-12 justify-content-center" id="menuHeader" role="tablist">
+      <li class="col-lg-4">
+        <a class="nav-link" href="#presentation">Présentation</a>
+      </li>
+      <li class="col-lg-4">
+        <a class="nav-link" href="#skills">Compétences</a>
+      </li>
+      <li class="col-lg-4">
+        <a class="nav-link" href="#projets">Projets</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="vh-80">
+  <div id="mainCarousel" class="carousel slide carousel-fade vh-80">
+    <div class="carousel-inner  border border-primary h-80">
+        <section id="presentation" class="carousel-item active d-block h-100">
+          
+          <!-- <nav>
+            <ul>
+              <li><img src="./images/icons-github.png" alt="Logo Github"></li>
+              <li><img src="./images/icons-linkedin.png" alt="Logo Linkedin"></li>
+              <li><img src="./images/icons-twitterx.png" alt="Logo Twitter / X"></li>
+  
+            </ul>
+          </nav> -->
+
+          <nav>
+            <ul id="menu" class="nav nav-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button id="presentation-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#presentation" type="button" role="tab" aria-controls="presentation" aria-selected="true">Présentation</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button id="projets-tab" class="nav-link nav-item" data-bs-toggle="tab" data-bs-target="#projets" type="button" role="tab" aria-controls="projets" aria-selected="false">Projets</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button id="skills-tab" class="nav-link nav-item" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Technologies connues</button>
+              </li>
+            </ul>
+          </nav>
+  
+          
+        </section>
+        <section id="skills" class="carousel-item d-block w-100 object-fit-fill">
+          <h2>Mes skills</h2>
+            <p>
+                    HTML
+                  </p>
+            <p>
+                    CSS
+                  </p>
+            <p>
+                    PHP
+                  </p>
+  
+                  <p>
+                    Javascript
+                  </p>
+  
+            </section>
+        <section id="projets" class="carousel-item d-block w-100">
+          <!-- <img class="gauche" src="./images/fleche-gauche.png" alt="Flèche gauche"> -->
+          <!-- <img class="droite" src="./images/fleche-droite.png" alt="Flèche droite"> -->
+                <h2>Mes réalisations</h2>
+                  <div class="slider">
+                    <article class="projet-1 activeProjet">
+                      <h3>Projet 1</h3>
+                    </article>
+                    <article class="projet-2">
+                      <h3>Projet 2</h3>
+                    </article>
+                    <article class="projet-3">
+                      <h3>Projet 3</h3>
+                    </article>
+                    <article class="projet-4">
+                      <h3>Projet 4</h3>
+                    </article>
+                    <article class="projet-5">
+                      <h3>Projet 5</h3>
+                    </article>
+                  </div>
+  
+              </section>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</main>
+
+<footer>
+  <h3>FOOTER</h3>
+</footer>
