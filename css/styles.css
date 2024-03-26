@@ -1,16 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  --black-color: #0C0C0C;
+  --white-color: #FFFAFA;
+}
+
 body {
   font-family: Poppins;
-  --bs-nav-tabs-border-color: red;
 }
 header {
-  background-color: #0C0C0C;
-  color: #FFFAFA;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
-.nav-item:hover {
-  border-color: var(--bs-nav-tabs-border-color);
+.active {
+  background-color: var(--white-color);
 }
-main section {
-  
+main {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.nav {
+  border: none;
+}
+
+#menu .nav-link {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+#menu .active {
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border-bottom: none;
+}
+
+#menu .nav-link:hover {
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border-bottom: none;
 }
