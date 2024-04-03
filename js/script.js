@@ -13,15 +13,15 @@ const subtitleValues =
 
 const colorsSubtitles = 
 [
-  'linear-gradient(90deg, #EFD81D 0%, #EFD81D 100%)',
-  'linear-gradient(90deg, #7377AD 0%, #7377AD 100%)',
-  'linear-gradient(90deg, #E96228 0%, #E96228 100%)',
-  'linear-gradient(90deg, #2862E9 0%, #2862E9 100%)',
-  'linear-gradient(90deg, #005E86 0%, #005E86 100%)',
-  'linear-gradient(90deg, #EFD81D 0%, #7377AD 33%, #E96228 66%, #005E86 100%)',
-  'linear-gradient(90deg, #7377AD 0%, #005E86 100%)',
-  'linear-gradient(90deg, #E96228 0%, #2862E9 100%)',
-  'linear-gradient(90deg, #EFD81D 0%, #005E86 100%)'
+  '-webkit-linear-gradient(90deg, #EFD81D 0%, #EFD81D 100%)',
+  '-webkit-linear-gradient(90deg, #7377AD 0%, #7377AD 100%)',
+  '-webkit-linear-gradient(90deg, #E96228 0%, #E96228 100%)',
+  '-webkit-linear-gradient(90deg, #2862E9 0%, #2862E9 100%)',
+  '-webkit-linear-gradient(90deg, #005E86 0%, #005E86 100%)',
+  '-webkit-linear-gradient(90deg, #EFD81D 0%, #7377AD 33%, #E96228 66%, #005E86 100%)',
+  '-webkit-linear-gradient(90deg, #7377AD 0%, #005E86 100%)',
+  '-webkit-linear-gradient(90deg, #E96228 0%, #2862E9 100%)',
+  '-webkit-linear-gradient(90deg, #EFD81D 0%, #005E86 100%)'
 ];
 
 function deleteChar() 
