@@ -20,67 +20,134 @@
           <a class="nav-link" href="#projets">Qu'ai-je fait ?&emsp;<i class="bi bi-list-task"></i></a>
         </li>
         <li class="nav-item col-4">
-        <a class="nav-link" href="#skills">Technologies&emsp;<i class="bi bi-stack"></i></a>
+        <a class="nav-link" href="#skills">Compétences techniques&emsp;<i class="bi bi-stack"></i></a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true">
+  <main class="container-fluid" data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true">
 
-    <section class="vh-100">
-
+    <section class="decoupage vh-100">
       <h2 class="p-2" id="presentation">Qui suis-je ?</h2>
-        <p>
-          Bonjour, je suis Julien Dussaut, développeur web passionné.<br>
-          Je suis spécialisé dans la création de sites web et d'applications web performantes et intuitives.<br>
-          Mes langages de prédilections pour le développement sont : HTML, CSS, JavaScript, PHP et MySQL.<br>
-          Je suis capable de répondre à tous vos besoins, que ce soit pour la création d'un site web vitrine, d'un site e-commerce, d'une application web métier ou encore d'un blog.<br>
-          Je suis rigoureux, méthodique et à l'écoute de vos besoins.<br>
-          Je mets tout en œuvre pour vous fournir un travail de qualité qui répond à vos attentes.<br>
-          Vous trouverez <a href="#projets">ici</a> quelques exemples de mes réalisations.<br><br>
-          N'hésitez pas à me contacter pour discuter de votre projet, je serai ravi de vous accompagner et de vous proposer une solution web adaptée à vos besoins.
-        </p>
-        <button class="cta"><a href="mailto:julien.dussaut@oclock.school"></a>Contactez-moi</button>
+      
+          <section class="row">
+            <p class="col">
+              Bonjour, je suis Julien Dussaut, développeur web passionné.<br>
+              Je suis spécialisé dans la création de sites web et d'applications web performantes et intuitives.<br>
+              Mes langages de prédilections pour le développement sont : HTML, CSS, JavaScript, PHP et MySQL.<br>
+              Je suis capable de répondre à tous vos besoins, que ce soit pour la création d'un site web vitrine, d'un site e-commerce, d'une application web métier ou encore d'un blog.<br>
+              Je suis rigoureux, méthodique et à l'écoute de vos besoins.<br>
+              Je mets tout en œuvre pour vous fournir un travail de qualité qui répond à vos attentes.<br>
+              Vous trouverez <a href="#projets">ici</a> quelques exemples de mes réalisations.<br><br>
+              N'hésitez pas à me contacter pour discuter de votre projet, je serai ravi de vous accompagner et de vous proposer une solution web adaptée à vos besoins.
+            </p>
+            <form action="" class="col text-start">
+          
+              <div class="col-auto">
+                <label for="nom" class="col-form-label">Nom : </label>
+                <input type="text" name="nom" class="form-control" id="nom">
+              </div>
+              <label for="prenom" class="col-form-label">Prénom : </label>
+              <input type="text" name="prenom" class="form-control" id="prenom">
+              <label for="email" class="col-form-label">Email : </label>
+              <input type="email" name="email" id="email" class="form-control" id="email">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+          
+          </section>
 
-    </section>
+        </section>
+
   
-    <section class="vh-100">
+    <section class="decoupage vh-100">
 
-      <h2 id="projets">Mes réalisations</h2>
+      <h2 class="p-2" id="projets">Mes réalisations</h2>
 
-          <article class="projet-1 activeProjet">
-            <h3>Projet 1</h3>
-          </article>
-          <article class="projet-2">
-            <h3>Projet 2</h3>
-          </article>
-          <article class="projet-3">
-            <h3>Projet 3</h3>
-          </article>
-          <article class="projet-4">
-            <h3>Projet 4</h3>
-          </article>
-          <article class="projet-5">
-            <h3>Projet 5</h3>
-          </article>
+      <div id="carouselProjet" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <article class="card">
+              <aside class="card-body">
+                <h3 class="card-title">Projet 1</h3>
+                <p class="card-tect">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </aside>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="card">
+              <aside class="card-body">
+                <h3 class="card-title">Projet 2</h3>
+                <p class="card-tect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui ratione impedit a mollitia corrupti inventore iusto blanditiis vitae dolores ex, expedita aperiam officia suscipit ullam possimus ea debitis sint tempore hic? Quae architecto error eligendi vel velit inventore, doloribus, aspernatur facilis praesentium doloremque veniam magnam saepe quidem. Veritatis, inventore, fugit nostrum accusamus laborum numquam blanditiis et iusto, quisquam quidem placeat voluptatibus sit sapiente itaque laboriosam nobis eligendi animi maxime at modi omnis assumenda excepturi. Aperiam, consequatur, corrupti qui repellendus, ex explicabo aliquid aspernatur odit ullam nulla expedita iure facilis. Dolores, nemo atque. Nisi, illum corrupti. Quod laboriosam debitis eos.</p>
+              </aside>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="card">
+              <aside class="card-body">
+                <h3 class="card-title">Projet 3</h3>
+                <p class="card-tect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui ratione impedit a mollitia corrupti inventore iusto blanditiis vitae dolores ex, expedita aperiam officia suscipit ullam possimus ea debitis sint tempore hic? Quae architecto error eligendi vel velit inventore, doloribus, aspernatur facilis praesentium doloremque veniam magnam saepe quidem. Veritatis, inventore, fugit nostrum accusamus laborum numquam blanditiis et iusto, quisquam quidem placeat voluptatibus sit sapiente itaque laboriosam nobis eligendi animi maxime at modi omnis assumenda excepturi. Aperiam, consequatur, corrupti qui repellendus, ex explicabo aliquid aspernatur odit ullam nulla expedita iure facilis. Dolores, nemo atque. Nisi, illum corrupti. Quod laboriosam debitis eos.</p>
+              </aside>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="card">
+              <aside class="card-body">
+                <h3 class="card-title">Projet 4</h3>
+                <p class="card-tect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui ratione impedit a mollitia corrupti inventore iusto blanditiis vitae dolores ex, expedita aperiam officia suscipit ullam possimus ea debitis sint tempore hic? Quae architecto error eligendi vel velit inventore, doloribus, aspernatur facilis praesentium doloremque veniam magnam saepe quidem. Veritatis, inventore, fugit nostrum accusamus laborum numquam blanditiis et iusto, quisquam quidem placeat voluptatibus sit sapiente itaque laboriosam nobis eligendi animi maxime at modi omnis assumenda excepturi. Aperiam, consequatur, corrupti qui repellendus, ex explicabo aliquid aspernatur odit ullam nulla expedita iure facilis. Dolores, nemo atque. Nisi, illum corrupti. Quod laboriosam debitis eos.</p>
+              </aside>
+            </article>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
 
     </section>
 
-    <section class="vh-100">
+    <section class="decoupage container-fluid vh-100">
 
-      <h2 id="skills">Technologies</h2>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>PHP</p>
-      <p>Javascript</p>
+      <h2 class="p-2" id="skills">Compétences techniques</h2>
+      
+      <section class="row">
+        <section class="col card">
+          <h2>HTML</h2>
+          <p>Le langage HTML permet de définir le squelette d'une page web.</p>
+        </section>
+        <section class="col card">
+          <h2>CSS</h2>
+          <p>Le CSS lui, sert à stylisé une page web.</p>
+        </section>
+        <section class="col card">
+          <h2>PHP</h2>
+          <p>Le PHP quant à lui, sert à dynamiser les informations présentes sur la page web</p>
+        </section>
+        <section class="col card">
+          <h2>Javascript</h2>
+          <p>La Javascript sert à dynamiser les pages web afin de les rendre intercatives</p>
+        </section>
+      </section>
+
 
     </section>
 
   </main>
 
 
-  <!-- <script src="./js/script.js"></script> -->
+  <script src="./js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
