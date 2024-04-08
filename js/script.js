@@ -13,15 +13,15 @@ const subtitleValues =
 
 const colorsSubtitles = 
 [
-  '-webkit-linear-gradient(90deg, #EFD81D 0%, #EFD81D 100%)',
-  '-webkit-linear-gradient(90deg, #7377AD 0%, #7377AD 100%)',
-  '-webkit-linear-gradient(90deg, #E96228 0%, #E96228 100%)',
-  '-webkit-linear-gradient(90deg, #2862E9 0%, #2862E9 100%)',
-  '-webkit-linear-gradient(90deg, #005E86 0%, #005E86 100%)',
-  '-webkit-linear-gradient(90deg, #EFD81D 0%, #7377AD 33%, #E96228 66%, #005E86 100%)',
-  '-webkit-linear-gradient(90deg, #7377AD 0%, #005E86 100%)',
-  '-webkit-linear-gradient(90deg, #E96228 0%, #2862E9 100%)',
-  '-webkit-linear-gradient(90deg, #EFD81D 0%, #005E86 100%)'
+  '-webkit-linear-gradient(90deg, #EFD81D 0%, #EFD81D 100%)',//JS
+  '-webkit-linear-gradient(90deg, #7377AD 0%, #7377AD 100%)',//Php
+  '-webkit-linear-gradient(90deg, #E96228 0%, #E96228 100%)',//Html
+  '-webkit-linear-gradient(90deg, #2862E9 0%, #2862E9 100%)',//Css
+  '-webkit-linear-gradient(90deg, #005E86 0%, #005E86 100%)',//Mysql
+  '-webkit-linear-gradient(to left, #E96228, #005E86 100%)',//Fullstack
+  '-webkit-linear-gradient(90deg, #7377AD 0%, #005E86 100%)',//Backend
+  '-webkit-linear-gradient(90deg, #E96228 0%, #2862E9 100%)',//Fronted
+  '-webkit-linear-gradient(90deg, #EFD81D 0%, #005E86 100%)' //Web
 ];
 
 function deleteChar() 
@@ -75,6 +75,14 @@ if(subtitleValues.includes(subtitle.innerText))
 let suppressionSoustitre = setInterval(deleteChar, 300);
 let indexChar = 0;
 
+const navLink = document.querySelectorAll('.nav-link');
+
+navLink.forEach(currentLink => {
+  currentLink.addEventListener('click', function(event) {
+    document.querySelector('#title-section').innerText = event.currentTarget.innerText;
+  });
+});
+const titleSection = document.querySelector('#title-section');
 
 
 
