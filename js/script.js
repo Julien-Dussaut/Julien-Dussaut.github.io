@@ -77,12 +77,7 @@ let indexChar = 0;
 
 const navLink = document.querySelectorAll('.nav-link');
 
-navLink.forEach(currentLink => {
-  currentLink.addEventListener('click', function(event) {
-    document.querySelector('#title-section').innerText = event.currentTarget.innerText;
-  });
-});
-const titleSection = document.querySelector('#title-section');
+
 
 
 

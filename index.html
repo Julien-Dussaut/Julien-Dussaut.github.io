@@ -11,18 +11,18 @@
 	<title>Julien Dussaut - Développeur web</title>
 </head>
 
-<body>
-	<div class="container-fluid p-0 d-flex vh-100">
-		<div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3offcanvas-md offcanvas-start">
-			<p class="navbar-brand text-center p-2">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
+<body class="vh-100">
+	<div class="container-fluid p-0 d-flex h-100">
+		<div id="bdSidebar" class="d-flex flex-column aling-items-center flex-shrink-0 p-3offcanvas-md offcanvas-start">
+			<p class="navbar-brand text-center m-0 p-2">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
 					id="cursor">|</span></p>
-			<hr>
-			<nav class="mynav nav nav-pills flex-column mb-auto justify-content-around">
-				<a href="#presentation" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-person-arms-up"></i>&nbsp;Qui
+			<hr class="m-1">
+			<nav class="mynav nav nav-pills flex-column mb-auto justify-content-around align-items-center">
+				<a href="index.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-arms-up"></i>&nbsp;Qui
 					suis-je ?</a>
-				<a href="#projets" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-box-fill"></i>&nbsp;Projets</a>
-				<a href="#skills" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-stack"></i>&nbsp;Compétences</a>
-				<a href="#CV" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a href="projets.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-box-fill"></i>&nbsp;Projets</a>
+				<a href="competences.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-stack"></i>&nbsp;Compétences</a>
+				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
 			</nav>
 			<hr>
 			<div class="d-flex">
@@ -35,52 +35,62 @@
 			</div>
 		</div>
 
-		<div class="bg-light flex-fill">
-
-			<div class="p-4">
-				<h2 id="title-section" class="text-center">Qui suis-je ?</h2>
-
-				<hr>
-				<div class="row">
-					<div class="col">
-						<section class="decoupage vh-100 col-10 align-self-end" id="presentation">
-							<p>
-								Bonjour, je suis Julien Dussaut, développeur web fullstack passionné, spécialisé dans le backend.<br>
-								Je possède avec une expertise variée dans plusieurs technologies clés de développement web. Avec une solide maîtrise du HTML, du CSS et de JavaScript, je suis capable de créer des interfaces utilisateur attrayantes et réactives. Cependant, là où je brille vraiment, c'est dans la conception et la mise en œuvre de solutions backend robustes et évolutives.<br>
-								Ma boîte à outils comprend des langages et des frameworks tels que PHP, MySQL, Bootstrap, Laravel et Symfony. Ces outils me permettent de construire des applications web dynamiques et performantes, tout en assurant une maintenance aisée et une évolutivité à long terme.<br>
-								En tant que fervent défenseur des bonnes pratiques de développement, je m'efforce toujours de garantir la qualité du code, la sécurité et la scalabilité de mes projets. J'ai également une solide expérience dans l'utilisation de Docker pour l'orchestration des conteneurs, ce qui facilite le déploiement et la gestion des applications dans des environnements variés.<br>
-								Que ce soit pour développer des sites web à partir de zéro, améliorer des projets existants ou résoudre des problèmes complexes, je suis prêt à relever les défis qui se présentent à moi. Explorez mon portfolio pour découvrir mes réalisations passées et mes compétences techniques, et n'hésitez pas à me contacter pour discuter de vos besoins en développement web.
-							</p>
-
-							<form class="col-4" action="">
-								<fieldset>
-									<legend>Contactez moi</legend>
-									<div class="input-group mb-4">
-										<label for="nom" class="input-group-text">Nom : </label>
-										<input id="nom" type="text" class="form-control">
-									</div>
-									<div class="input-group mb-4">
-										<label for="prenom" class="input-group-text">Prénom : </label>
-										<input id="prenom" type="text" class="form-control">
-									</div>
-									<div class="input-group mb-4">
-										<label for="email" class="input-group-text">Email : </label>
-										<input id="email" type="text" class="form-control">
-									</div>
-									<div class="input-group mb-4">
-										<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
-											placeholder="Votre message..."></textarea>
-									</div>
-									<button type="submit" class="btn btn-primary">Envoyer</button>
-								</fieldset>
-
-							</form>
-
-
-						</section>
-					</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="formulaire-call-to-action" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Contactez moi</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="col" action="">
+			<fieldset>
+				<legend></legend>
+				<div class="input-group mb-4">
+					<label for="nom" class="input-group-text">Nom</label>
+					<input id="nom" type="text" class="form-control">
 				</div>
-			</div>
+				<div class="input-group mb-4">
+					<label for="prenom" class="input-group-text">Prénom</label>
+					<input id="prenom" type="text" class="form-control">
+				</div>
+				<div class="input-group mb-4">
+					<label for="email" class="input-group-text">Email</label>
+					<input id="email" type="text" class="form-control">
+				</div>
+				<div class="input-group mb-4">
+					<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
+						placeholder="Votre message..."></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Envoyer</button>
+			</fieldset>
+		</form>
+  </div>
+</div>
+		<div class="flex-fill">
+			<section class="p-4 d-flex flex-column">
+				<h2 id="title-section" class="text-center">Qui suis-je ?</h2>
+				<hr>
+				<article class="row decoupage align-items-center" id="presentation">
+					<p class="row w-75 align-self-center">
+						Bonjour, je suis Julien Dussaut, développeur web fullstack passionné, spécialisé dans le backend.<br>
+						Je possède avec une expertise variée dans plusieurs technologies clés de développement web. Avec une solide
+						maîtrise du HTML, du CSS et de JavaScript, je suis capable de créer des interfaces utilisateur attrayantes
+						et réactives. Cependant, là où je brille vraiment, c'est dans la conception et la mise en œuvre de solutions
+						backend robustes et évolutives.<br>
+						Ma boîte à outils comprend des langages et des frameworks tels que PHP, MySQL, Bootstrap, Laravel et
+						Symfony. Ces outils me permettent de construire des applications web dynamiques et performantes, tout en
+						assurant une maintenance aisée et une évolutivité à long terme.<br>
+						En tant que fervent défenseur des bonnes pratiques de développement, je m'efforce toujours de garantir la
+						qualité du code, la sécurité et la scalabilité de mes projets. J'ai également une solide expérience dans
+						l'utilisation de Docker pour l'orchestration des conteneurs, ce qui facilite le déploiement et la gestion
+						des applications dans des environnements variés.<br>
+						Que ce soit pour développer des sites web à partir de zéro, améliorer des projets existants ou résoudre des
+						problèmes complexes, je suis prêt à relever les défis qui se présentent à moi. Explorez mon portfolio pour
+						découvrir mes réalisations passées et mes compétences techniques, et n'hésitez pas à me contacter pour
+						discuter de vos besoins en développement web.
+					</p>	
+				</article>
+				<button class="btn btn-primary w-50 row align-self-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
+			</section>
 		</div>
 	</div>
 
@@ -89,4 +99,5 @@
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 </body>
+
 </html>
