@@ -13,16 +13,17 @@
 
 <body class="vh-100">
 	<div class="container-fluid p-0 d-flex h-100">
-		<div id="bdSidebar" class="d-flex flex-column aling-items-center flex-shrink-0 p-3offcanvas-md offcanvas-start">
+		<div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3offcanvas-md offcanvas-start">
 			<p class="navbar-brand text-center m-0 p-2">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
 					id="cursor">|</span></p>
 			<hr class="m-1">
-			<nav class="mynav nav nav-pills flex-column mb-auto justify-content-around align-items-center">
-				<a href="index.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-arms-up"></i>&nbsp;Qui
-					suis-je ?</a>
+			<nav class="mynav nav nav-pills flex-column mb-auto align-items-center">
+				<button href="" class="nav-link btn btn-primary m-2 fs-6 w-75 current"><i class="bi bi-person-arms-up current"></i>&nbsp;Qui
+					suis-je ?</button>
 				<a href="projets.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-box-fill"></i>&nbsp;Projets</a>
 				<a href="competences.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-stack"></i>&nbsp;Compétences</a>
-				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75 mb-5"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<img src="images/nav-image.png" alt="" class="w-75 m-2 mt-5">
 			</nav>
 			<hr>
 			<div class="d-flex">
@@ -69,27 +70,26 @@
 			<section class="p-4 d-flex flex-column">
 				<h2 id="title-section" class="text-center">Qui suis-je ?</h2>
 				<hr>
-				<article class="row decoupage align-items-center" id="presentation">
-					<p class="row w-75 align-self-center">
-						Bonjour, je suis Julien Dussaut, développeur web fullstack passionné, spécialisé dans le backend.<br>
+				<article class="row justify-content-center" id="presentation">
+					<p class="row w-75 mt-5 mb-5">
+						Bonjour, je suis Julien Dussaut, développeur web fullstack passionné, spécialisé dans le backend.<br><br>
 						Je possède avec une expertise variée dans plusieurs technologies clés de développement web. Avec une solide
-						maîtrise du HTML, du CSS et de JavaScript, je suis capable de créer des interfaces utilisateur attrayantes
+						maîtrise du ,HTML, du CSS et de JavaScript, je suis capable de créer des interfaces utilisateur attrayantes
 						et réactives. Cependant, là où je brille vraiment, c'est dans la conception et la mise en œuvre de solutions
-						backend robustes et évolutives.<br>
-						Ma boîte à outils comprend des langages et des frameworks tels que PHP, MySQL, Bootstrap, Laravel et
-						Symfony. Ces outils me permettent de construire des applications web dynamiques et performantes, tout en
-						assurant une maintenance aisée et une évolutivité à long terme.<br>
+						backend robustes et évolutives.<br><br>
+						Ma boîte à outils comprend des langages et des frameworks tels que PHP, MySQL, Bootstrap, Laravel et Symfony. Ces outils me permettent de construire des applications web dynamiques et performantes, tout en
+						assurant une maintenance aisée et une évolutivité à long terme.<br><br>
 						En tant que fervent défenseur des bonnes pratiques de développement, je m'efforce toujours de garantir la
 						qualité du code, la sécurité et la scalabilité de mes projets. J'ai également une solide expérience dans
 						l'utilisation de Docker pour l'orchestration des conteneurs, ce qui facilite le déploiement et la gestion
-						des applications dans des environnements variés.<br>
+						des applications dans des environnements variés.<br><br>
 						Que ce soit pour développer des sites web à partir de zéro, améliorer des projets existants ou résoudre des
 						problèmes complexes, je suis prêt à relever les défis qui se présentent à moi. Explorez mon portfolio pour
 						découvrir mes réalisations passées et mes compétences techniques, et n'hésitez pas à me contacter pour
 						discuter de vos besoins en développement web.
 					</p>	
 				</article>
-				<button class="btn btn-primary w-50 row align-self-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
+				<button class="btn btn-primary w-50 row align-self-center mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
 			</section>
 		</div>
 	</div>

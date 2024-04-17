@@ -18,11 +18,25 @@ body {
   background-color: var(--black-color);
   color: var(--orange-color);
   position: sticky;
+  width: 15%;
+}
+#bdSidebar img {
+  display: inline;
+  height: auto;
+  border-radius: var(--bs-border-radius);
+  border: 1px solid var(--orange-color);
 }
 .btn-primary {
   background-color: var(--orange-color);
   color: var(--black-color);
   border: 1px solid var(--black-color);
+}
+
+button.current {
+  background-color: var(--black-color);
+  color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  cursor: default;
 }
 .btn-primary:hover {
   background-color: var(--black-color);
@@ -68,6 +82,7 @@ main {
 section h2 {
   color: #FF7F11;
 }
+
 #container {
   height: 100%;
   border: 1px solid blue;
