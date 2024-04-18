@@ -26,6 +26,28 @@ body {
   border-radius: var(--bs-border-radius);
   border: 1px solid var(--orange-color);
 }
+
+.flex-fill {
+  border: 5px solid var(--black-color);
+}
+#bdSidebar hr, section hr {
+  width: 95%;
+  margin: auto;
+  height: 50px;
+}
+#bdSidebar hr {
+  color: var(--orange-color);
+}
+section hr {
+  color: var(--black-color);
+}
+
+#title-section {
+  background-color: var(--black-color);
+  color: var(--orange-color);
+  padding: 0;
+}
+
 .btn-primary {
   background-color: var(--orange-color);
   color: var(--black-color);
@@ -75,6 +97,9 @@ main {
   color: var(--black-color);
 }
 
+#cta {
+  margin: auto;
+}
 .nav {
   height: 100%;
 }

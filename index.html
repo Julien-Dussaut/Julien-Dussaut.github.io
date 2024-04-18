@@ -12,65 +12,44 @@
 </head>
 
 <body class="vh-100">
+
+	<!-- TOUT LE CONTENU (menu, corps, offcanvas, footer)-->
+
 	<div class="container-fluid p-0 d-flex h-100">
+
+		<!-- MENU SIDEBAR -->
+
 		<div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3offcanvas-md offcanvas-start">
-			<p class="navbar-brand text-center m-0 p-2">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
+			<p class="navbar-brand text-center m-0 p-3">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
 					id="cursor">|</span></p>
-			<hr class="m-1">
 			<nav class="mynav nav nav-pills flex-column mb-auto align-items-center">
 				<button href="" class="nav-link btn btn-primary m-2 fs-6 w-75 current"><i class="bi bi-person-arms-up current"></i>&nbsp;Qui
 					suis-je ?</button>
 				<a href="projets.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-box-fill"></i>&nbsp;Projets</a>
 				<a href="competences.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-stack"></i>&nbsp;Compétences</a>
-				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75 mb-5"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a class="nav-link btn btn-primary m-2 fs-6 w-75 mb-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</a>
 				<img src="images/nav-image.png" alt="" class="w-75 m-2 mt-5">
 			</nav>
-			<hr>
+			
 			<div class="d-flex">
 				<i class="fa-solid fa-book me-2"></i>
 				<span>
-					<h6 class="m-2">
+					<h6 class="m-2 text-center">
 						Portfolio de Julien Dussaut
 					</h6>
 				</span>
 			</div>
 		</div>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="formulaire-call-to-action" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Contactez moi</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <form class="col" action="">
-			<fieldset>
-				<legend></legend>
-				<div class="input-group mb-4">
-					<label for="nom" class="input-group-text">Nom</label>
-					<input id="nom" type="text" class="form-control">
-				</div>
-				<div class="input-group mb-4">
-					<label for="prenom" class="input-group-text">Prénom</label>
-					<input id="prenom" type="text" class="form-control">
-				</div>
-				<div class="input-group mb-4">
-					<label for="email" class="input-group-text">Email</label>
-					<input id="email" type="text" class="form-control">
-				</div>
-				<div class="input-group mb-4">
-					<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
-						placeholder="Votre message..."></textarea>
-				</div>
-				<button type="submit" class="btn btn-primary">Envoyer</button>
-			</fieldset>
-		</form>
-  </div>
-</div>
+		<!-- FIN MENU SIDEBAR -->
+
+		<!-- CORPS DE LA PAGE -->
+
 		<div class="flex-fill">
-			<section class="p-4 d-flex flex-column">
-				<h2 id="title-section" class="text-center">Qui suis-je ?</h2>
-				<hr>
-				<article class="row justify-content-center" id="presentation">
+			<h2 id="title-section" class="text-center m-0 p-3">Qui suis-je ?</h2>
+			<section class="p-4 pb-0 d-flex flex-column">
+				<section class="row justify-content-center" id="presentation">
 					<p class="row w-75 mt-5 mb-5">
 						Bonjour, je suis Julien Dussaut, développeur web fullstack passionné, spécialisé dans le backend.<br><br>
 						Je possède avec une expertise variée dans plusieurs technologies clés de développement web. Avec une solide
@@ -88,16 +67,56 @@
 						découvrir mes réalisations passées et mes compétences techniques, et n'hésitez pas à me contacter pour
 						discuter de vos besoins en développement web.
 					</p>	
-				</article>
-				<button class="btn btn-primary w-50 row align-self-center mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
+				</section>
+				<!-- <button class="btn btn-primary w-50 row align-self-center mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button> -->
+				<button id="cta" class="btn btn-primary w-50 row align-self-center mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
 			</section>
+			
+			<!-- FIN CORPS DE LA PAGE -->
+			
 		</div>
 	</div>
+
+	<!-- OFFCANVAS -->
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="formulaire-call-to-action" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasRightLabel">Contactez moi</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<form class="col" action="">
+				<fieldset>
+					<legend></legend>
+					<div class="input-group mb-4">
+						<label for="nom" class="input-group-text">Nom</label>
+						<input id="nom" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<label for="prenom" class="input-group-text">Prénom</label>
+						<input id="prenom" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<label for="email" class="input-group-text">Email</label>
+						<input id="email" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
+							placeholder="Votre message..."></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Envoyer</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<!-- FIN OFFCANVAS -->
 
 	<script src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+		<!-- FIN TOUT LE CONTENU (menu, corps, offcanvas, footer)-->
 </body>
 
 </html>
