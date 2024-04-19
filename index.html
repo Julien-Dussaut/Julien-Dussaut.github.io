@@ -18,7 +18,6 @@
 	<div class="container-fluid p-0 d-flex h-100">
 
 		<!-- MENU SIDEBAR -->
-
 		<div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3offcanvas-md offcanvas-start">
 			<p class="navbar-brand text-center m-0 p-3">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
 					id="cursor">|</span></p>
@@ -46,7 +45,7 @@
 
 		<!-- CORPS DE LA PAGE -->
 
-		<div class="flex-fill">
+		<div class="flex-fill d-flex flex-column">
 			<h2 id="title-section" class="text-center m-0 p-3">Qui suis-je ?</h2>
 			<section class="p-4 pb-0 d-flex flex-column">
 				<section class="row justify-content-center" id="presentation">
@@ -68,8 +67,13 @@
 						discuter de vos besoins en développement web.
 					</p>	
 				</section>
+
+				<section class="d-flex flex-column">
+
+					<button id="cta" class="btn btn-primary w-50 row align-self-end mt-5 align-self-baseline" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
+
+				</section>
 				<!-- <button class="btn btn-primary w-50 row align-self-center mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button> -->
-				<button id="cta" class="btn btn-primary w-50 row align-self-center mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</button>
 			</section>
 			
 			<!-- FIN CORPS DE LA PAGE -->
@@ -104,7 +108,7 @@
 						<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
 							placeholder="Votre message..."></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary">Envoyer</button>
+					<button type="submit" class="btn btn-primary w-100">Envoyer</button>
 				</fieldset>
 			</form>
 		</div>

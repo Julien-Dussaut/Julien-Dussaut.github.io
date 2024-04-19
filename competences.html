@@ -12,20 +12,25 @@
 </head>
 
 <body class="vh-100">
+
+	<!-- TOUT LE CONTENU (menu, corps, offcanvas, footer)-->
+
 	<div class="container-fluid p-0 d-flex h-100">
+
+		<!-- MENU SIDEBAR -->
 		<div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3offcanvas-md offcanvas-start">
-			<p class="navbar-brand text-center m-0 p-2">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
+			<p class="navbar-brand text-center m-0 p-3">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
 					id="cursor">|</span></p>
-			<hr class="m-1">
 			<nav class="mynav nav nav-pills flex-column mb-auto align-items-center">
 				<a href="index.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-arms-up current"></i>&nbsp;Qui
 					suis-je ?</a>
-				<button href="projets.html" class="nav-link btn btn-primary m-2 fs-6 w-75 current"><i class="bi bi-box-fill"></i>&nbsp;Projets</button>
-				<a href="competences.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-stack"></i>&nbsp;Compétences</a>
-				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75 mb-5"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a href="projets.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-box-fill"></i>&nbsp;Projets</a>
+				<button class="nav-link btn btn-primary m-2 fs-6 w-75  current"><i class="bi bi-stack"></i>&nbsp;Compétences</button>
+				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a class="nav-link btn btn-primary m-2 fs-6 w-75 mb-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</a>
 				<img src="images/nav-image.png" alt="" class="w-75 m-2 mt-5">
 			</nav>
-			<hr>
+			
 			<div class="d-flex">
 				<i class="fa-solid fa-book me-2"></i>
 				<span>
@@ -36,76 +41,56 @@
 			</div>
 		</div>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="formulaire-call-to-action" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Contactez moi</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <form class="col" action="">
-			<fieldset>
-				<legend></legend>
-				<div class="input-group mb-4">
-					<label for="nom" class="input-group-text">Nom</label>
-					<input id="nom" type="text" class="form-control">
-				</div>
-				<div class="input-group mb-4">
-					<label for="prenom" class="input-group-text">Prénom</label>
-					<input id="prenom" type="text" class="form-control">
-				</div>
-				<div class="input-group mb-4">
-					<label for="email" class="input-group-text">Email</label>
-					<input id="email" type="text" class="form-control">
-				</div>
-				<div class="input-group mb-4">
-					<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
-						placeholder="Votre message..."></textarea>
-				</div>
-				<button type="submit" class="btn btn-primary">Envoyer</button>
-			</fieldset>
-		</form>
-  </div>
-</div>
-		<div class="flex-fill">
-			<section class="p-4 d-flex flex-column">
-				<h2 id="title-section" class="text-center">Compétences</h2>
-				<hr>
-		    <section class="row justify-content-center" id="competences">
-          
-          <section class="row">
-            <div class="col-6 align-self-center">
-							<article class="card">
-								<h2>HTML</h2>
-								<p>Le langage HTML permet de définir le squelette d'une page web.</p>
-							</article>
-						</div>
-            <div class="col-6">
-							<article class="card">
-								<h2>CSS</h2>
-								<p>Le CSS lui, sert à stylisé une page web.</p>
-							</article>
-						</div>
-					</section>
-					<section class="row">
-            <article class="col card">
-              <h2>PHP</h2>
-              <p>Le PHP quant à lui, sert à dynamiser les informations présentes sur la page web</p>
-            </article>
-            <article class="col card">
-              <h2>Javascript</h2>
-              <p>La Javascript sert à dynamiser les pages web afin de les rendre intercatives</p>
-            </article>
-          </section>
-    
-    
-        </section>
-			</div>
+		<!-- FIN MENU SIDEBAR -->
+
+		<!-- CORPS DE LA PAGE -->
+
+		<div class="flex-fill d-flex flex-column">
+			<h2 id="title-section" class="text-center m-0 p-3">Compétences</h2>
+			<img src="images/Roadmap.png" alt="">
 		</div>
 	</div>
+
+	<!-- OFFCANVAS -->
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="formulaire-call-to-action" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasRightLabel">Contactez moi</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<form class="col" action="">
+				<fieldset>
+					<legend></legend>
+					<div class="input-group mb-4">
+						<label for="nom" class="input-group-text">Nom</label>
+						<input id="nom" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<label for="prenom" class="input-group-text">Prénom</label>
+						<input id="prenom" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<label for="email" class="input-group-text">Email</label>
+						<input id="email" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
+							placeholder="Votre message..."></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary w-100">Envoyer</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<!-- FIN OFFCANVAS -->
 
 	<script src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+		<!-- FIN TOUT LE CONTENU (menu, corps, offcanvas, footer)-->
 </body>
+
 </html>

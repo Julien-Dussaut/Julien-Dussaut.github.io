@@ -29,17 +29,7 @@ body {
 
 .flex-fill {
   border: 5px solid var(--black-color);
-}
-#bdSidebar hr, section hr {
-  width: 95%;
-  margin: auto;
-  height: 50px;
-}
-#bdSidebar hr {
-  color: var(--orange-color);
-}
-section hr {
-  color: var(--black-color);
+  box-shadow: inset 0 0 15px var(--black-color);
 }
 
 #title-section {
@@ -122,13 +112,30 @@ section h2 {
   width: 50%;
 }
 
-.offcanvas-body {
+.offcanvas {
   background-color: var(--black-color);
+  color: var(--orange-color);
 }
 .input-group-text {
   width: 30%;
   color: var(--orange-color);
+  background-color: var(--black-color);
+}
+.form-control {
+  background-color: var(--black-color);
+}
+.form-control:focus {
+  background-color: var(--black-color);
+  color: var(--orange-color);
 }
 label.message {
   height: 10%;
+}
+
+.btn-close {
+  background-color: var(--orange-color);
+}
+
+textarea::placeholder {
+  color: var(--orange-color);
 }
