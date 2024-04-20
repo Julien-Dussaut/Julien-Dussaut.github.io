@@ -44,6 +44,17 @@ body {
   border: 1px solid var(--black-color);
 }
 
+.btn-outline-primary {
+  border-color: var(--orange-color);
+  color: var(--orange-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--orange-color);
+  color: var(--black-color);
+  border-color: var(--orange-color);
+}
+
 button.current {
   background-color: var(--black-color);
   color: var(--orange-color);
@@ -79,13 +90,6 @@ h1 > span#moi {
   -webkit-background-clip:text;
   color:transparent;
 }
-.active {
-  background-color: var(--white-color);
-}
-main {
-  background-color: var(--white-color);
-  color: var(--black-color);
-}
 
 #cta {
   margin: auto;
@@ -98,20 +102,34 @@ section h2 {
   color: #FF7F11;
 }
 
-#container {
-  height: 100%;
-  border: 1px solid blue;
-}
-
-#projets .row {
-  height: 50%;
-}
-.card {
-  /* background-color: #0C0C0C; */
+/** ******************************************************** PROJET */*
+#projets .card {
+  background-color: var(--black-color);
   color:#FF7F11;
-  width: 50%;
 }
 
+.card .img-thumbnail {
+  border: 1px solid var(--orange-color);
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+.card a {
+  margin: auto;
+}
+
+.card .list-group-flush {
+  margin: auto;
+}
+.card .list-group-item {
+  border: 1px solid var(--orange-color);
+  background-color: var(--black-color);
+  color: var(--orange-color);
+}
+
+/** ******************************************************** PROJET */*
+
+/** ******************************************************** FORMULAIRE DE CONTACT */
 .offcanvas {
   background-color: var(--black-color);
   color: var(--orange-color);
@@ -131,11 +149,12 @@ section h2 {
 label.message {
   height: 10%;
 }
-
 .btn-close {
   background-color: var(--orange-color);
 }
-
 textarea::placeholder {
   color: var(--orange-color);
 }
+
+/** ******************************************************** FORMULAIRE DE CONTACT */
+

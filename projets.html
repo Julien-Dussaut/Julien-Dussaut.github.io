@@ -11,82 +11,133 @@
 	<title>Julien Dussaut - Développeur web</title>
 </head>
 
-<body>
-	<div class="container-fluid p-0 d-flex vh-100">
+<body class="vh-100">
+
+	<!-- TOUT LE CONTENU (menu, corps, offcanvas, footer)-->
+
+	<div class="container-fluid p-0 d-flex h-100">
+
+		<!-- MENU SIDEBAR -->
 		<div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3offcanvas-md offcanvas-start">
-			<p class="navbar-brand text-center p-2">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
+			<p class="navbar-brand text-center m-0 p-3">Julien Dussaut<br>Développeur <span id="subtitle"></span><span
 					id="cursor">|</span></p>
-			<!--hr-->
-			<nav class="mynav nav nav-pills flex-column mb-auto justify-content-around">
-				<a href="index.html" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-person-arms-up"></i>&nbsp;Qui
+			<nav class="mynav nav nav-pills flex-column mb-auto align-items-center">
+				<a href="index.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i
+						class="bi bi-person-arms-up current"></i>&nbsp;Qui
 					suis-je ?</a>
-				<a href="projets.html" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-box-fill"></i>&nbsp;Projets</a>
-				<a href="competences.html" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-stack"></i>&nbsp;Compétences</a>
-				<a href="#CV" class="nav-link btn btn-primary m-2 fs-5"><i class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<button class="nav-link btn btn-primary m-2 fs-6 w-75 current"><i
+						class="bi bi-box-fill"></i>&nbsp;Projets</button>
+				<a href="competences.html" class="nav-link btn btn-primary m-2 fs-6 w-75"><i
+						class="bi bi-stack"></i>&nbsp;Compétences</a>
+				<a href="#CV" class="nav-link btn btn-primary m-2 fs-6 w-75"><i
+						class="bi bi-person-square"></i>&nbsp;Parcours</a>
+				<a class="nav-link btn btn-primary m-2 fs-6 w-75 mb-5" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#formulaire-call-to-action" aria-controls="offcanvasRight">Contactez moi</a>
+				<img src="images/nav-image.png" alt="" class="w-75 m-2 mt-5">
+				<p>Ajouter image de lignes de code ?</p>
 			</nav>
-			<hr>
+
 			<div class="d-flex">
 				<i class="fa-solid fa-book me-2"></i>
 				<span>
-					<h6 class="m-2">
+					<h6 class="m-2 text-center">
 						Portfolio de Julien Dussaut
 					</h6>
 				</span>
 			</div>
 		</div>
 
-		<div class="bg-light flex-fill">
-			<div class="p-4" id="container">
-				<h2 id="title-section" class="text-center">Mes réalisations</h2>
-				<hr>
-        <section class="row decoupage align-items-center" id="projets">
+		<!-- FIN MENU SIDEBAR -->
 
-          <section class="row h-75 border border-success">
-            <div class="card col d-inline-block m-3">
-              <!-- <img src="..." class="card-img-top" alt="..."> -->
-              <div class="card-body">
-                <h5 class="card-title">oShop</h5>
-                <p class="card-text">Dynamisation d'un site statique grâce à la POO et à l'architecture MVC</p>
-                <a href="/projets/oShop/public/" class="btn btn-primary" target="_blank">Voir le site</a>
-              </div>
-            </div> 
+		<!-- CORPS DE LA PAGE -->
 
-            <div class="card col d-inline-block m-3">
-              <div class="card-body">
-                <h5 class="card-title">oBlog</h5>
-                <p class="card-text">Dynamisation d'un site grâce à la POO en PHP.</p>
-                <a href="/projets/oblog/index.php" class="btn btn-primary" target="_blank">Voir le site</a>
-              </div>
-            </div>
+		<div class="flex-fill d-flex flex-column h-100">
+			<h2 id="title-section" class="text-center m-0 p-3">Mes projets</h2>
+			<section class="p-4 pb-0 d-flex flex-column h-100">
 
-          </section>
-          <section class="row h-75 border border-success">
-            <div class="card col d-inline-block m-3">
-              <div class="card-body">
-                <h5 class="card-title">oNews</h5>
-                <p class="card-text">Dynamisation d'un site grâce à PHP.</p>
-                <a href="/projets/oNews/index.php" class="btn btn-primary" target="_blank">Voir le site</a>
-              </div>
-            </div>
+				<section class="row" id="projets">
 
-            <div class="card col d-inline-block m-3">
-              <div class="card-body">
-                <h5 class="card-title">Hero Corp</h5>
-                <p class="card-text">Intégration HTML / CSS</p>
-                <a href="/projets/hero-corp/html/index.html" class="btn btn-primary" target="_blank">Voir le site</a>
-              </div>
-            </div>
-          </section>
-          
-    
-        </section>
-			</div>
+					<article class="card m-5 p-4 col">
+						<h4 class="card-header text-center pb-4">Hero Corp</h4>
+						<h5 class="fs-6">Html / Css</h5>
+						<img class="img-thumbnail rounded" src="images/preview-hero-corp.PNG" alt="">
+						<aside class="card-body d-flex flex-column">
+								<a href="/projets/Hero-Corp/html/index.html" class="btn btn-outline-primary p-2 w-50 mt-4 mb-4"
+									target="_blank">Voir le site</a>
+							<p class="card-text">
+								Le but de cet exercice était de réaliser l'intégration d'une page web suivant une maquette fourni. Seul les textes étaient fournis.
+							</p>
+							<p>
+								<span>Html</span><br>
+								<span>Css</span>
+							</p>
+						</aside>
+					</article>
+					<article class="card m-5  p-2 col">
+						<img src="..." class="card-img-top" alt="...">
+						<aside class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's content.</p>
+						</aside>
+					</article>
+
+				</section>
+
+				<section class="d-flex flex-column">
+
+					<button id="cta" class="btn btn-primary w-50 row align-self-end mt-5 align-self-baseline"
+						type="button" data-bs-toggle="offcanvas" data-bs-target="#formulaire-call-to-action"
+						aria-controls="offcanvasRight">Contactez moi</button>
+
+				</section>
+			</section>
+
+			<!-- FIN CORPS DE LA PAGE -->
+
 		</div>
 	</div>
+
+	<!-- OFFCANVAS -->
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="formulaire-call-to-action"
+		aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasRightLabel">Contactez moi</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<form class="col" action="">
+				<fieldset>
+					<legend></legend>
+					<div class="input-group mb-4">
+						<label for="nom" class="input-group-text">Nom</label>
+						<input id="nom" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<label for="prenom" class="input-group-text">Prénom</label>
+						<input id="prenom" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<label for="email" class="input-group-text">Email</label>
+						<input id="email" type="text" class="form-control">
+					</div>
+					<div class="input-group mb-4">
+						<textarea class="form-control message" name="message" id="message" cols="30" rows="10"
+							placeholder="Votre message..."></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary w-100">Envoyer</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<!-- FIN OFFCANVAS -->
 
 	<script src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+	<!-- FIN TOUT LE CONTENU (menu, corps, offcanvas, footer)-->
 </body>
+
 </html>
