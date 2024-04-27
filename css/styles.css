@@ -18,6 +18,7 @@ body {
   background-color: var(--black-color);
   color: var(--orange-color);
   position: sticky;
+  height: 100vh;
   width: 15%;
 }
 #bdSidebar img {
@@ -103,11 +104,18 @@ section h2 {
 }
 
 /** ******************************************************** PROJET */*
-#projets .card {
+.carousel-inner .card {
   background-color: var(--black-color);
   color:#FF7F11;
 }
 
+#carouselProjets {
+  border: 1px solid green;
+  height: 100%;
+}
+.carousel-inner {
+  border: 1px solid red;
+}
 .card .img-thumbnail {
   border: 1px solid var(--orange-color);
   width: 75%;
@@ -116,6 +124,7 @@ section h2 {
 }
 .card a {
   margin: auto;
+  width: 50%
 }
 
 .card .list-group-flush {
@@ -158,3 +167,15 @@ textarea::placeholder {
 
 /** ******************************************************** FORMULAIRE DE CONTACT */
 
+#carouselProjets {
+  background-color: var(--black-color);
+  height: 50vh;
+}
+
+#carouselProjets span {
+  color: orange;
+}
+
+.carousel-control-prev-icon {
+  background-color: orange;
+}
