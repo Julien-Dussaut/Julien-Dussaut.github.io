@@ -92,13 +92,6 @@ main .btn-primary:hover {
   margin: auto;
 }
 
-/* .card {
-  background-color: var(--black-color);
-  color: var(--orange-color);
-  border-color: var(--orange-color);
-} */
-
-
 /* ************************************************** MAIN COMPETENCES ************************************************** */
 
 section > h3 {
@@ -132,6 +125,9 @@ section > h3 {
   border: 1px solid var(--orange-color);
 }
 
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(255, 127, 17, 0.7);
+}
 .card-body {
   background-color: var(--white-color);
   color: var(--black-color);
@@ -142,6 +138,25 @@ section > h3 {
 }
 
 /* ************************************************** END MAIN COMPETENCES************************************************** */
+
+/* ************************************************** MAIN PROJETS************************************************** */
+
+#projets .card {
+  background-color: var(--black-color);
+}
+
+#projets .card img {
+  border: 1px solid var(--orange-color);
+}
+
+#projets .card-body {
+  border: 1px solid var(--orange-color);
+  border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+  background-color: var(--black-color);
+  color: var(--orange-color);
+}
+
+/* ************************************************** END MAIN PROJETS************************************************** */
 
 /* ************************************************** END MAIN ************************************************** */
 
@@ -190,12 +205,3 @@ textarea::placeholder {
 /** *********************************************** FIN FORMULAIRE DE CONTACT *********************************************** */
 
 /** *********************************************** DEBUG ET TEST A VIRER */
-
-#title-navbar-skills > li {
-  color: var(--orange-color);
-}
-
-#title-navbar-skills .active {
-  background-color: var(--orange-color);
-  color: var(--black-color);
-}
