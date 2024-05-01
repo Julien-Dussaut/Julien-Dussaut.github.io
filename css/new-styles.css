@@ -142,7 +142,8 @@ section > h3 {
 /* ************************************************** MAIN PROJETS************************************************** */
 
 #projets .card {
-  background-color: var(--black-color);
+  background-color: var(--white-color);
+  
 }
 
 #projets .card img {
